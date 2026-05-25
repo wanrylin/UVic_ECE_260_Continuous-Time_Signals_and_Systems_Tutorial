@@ -106,8 +106,8 @@ $$
 
 Equivalently:
 
-- $\operatorname{Re}\{x(t)\}$ is even.
-- $\operatorname{Im}\{x(t)\}$ is odd.
+- $\mathrm{Re}\{x(t)\}$ is even.
+- $\mathrm{Im}\{x(t)\}$ is odd.
 
 The complex exponential $e^{j\omega t}=\cos(\omega t)+j\sin(\omega t)$ is a
 standard example.
@@ -377,7 +377,7 @@ In this course, the convention is $u(0)=1$.
 ### Signum Function
 
 $$
-\operatorname{sgn}(t)=
+\mathrm{sgn}(t)=
 \begin{cases}
 1, & t>0,\\
 0, & t=0,\\
@@ -388,7 +388,7 @@ $$
 For $t\ne0$,
 
 $$
-\operatorname{sgn}(t)=2u(t)-1.
+\mathrm{sgn}(t)=2u(t)-1.
 $$
 
 This identity does not hold at $t=0$ under the convention $u(0)=1$.
@@ -398,7 +398,7 @@ This identity does not hold at $t=0$ under the convention $u(0)=1$.
 The unit rectangular pulse is commonly defined as
 
 $$
-\operatorname{rect}(t)=
+\mathrm{rect}(t)=
 \begin{cases}
 1, & -\frac{1}{2}\le t<\frac{1}{2},\\
 0, & \text{otherwise}.
@@ -410,13 +410,13 @@ $$
 In these lectures, the sinc function is defined as
 
 $$
-\operatorname{sinc}(t)=\frac{\sin t}{t}, \qquad t\ne0.
+\mathrm{sinc}(t)=\frac{\sin t}{t}, \qquad t\ne0.
 $$
 
 At the origin, define the value by the limit:
 
 $$
-\operatorname{sinc}(0)=
+\mathrm{sinc}(0)=
 \lim_{t\to0}\frac{\sin t}{t}=1.
 $$
 
