@@ -50,10 +50,10 @@ Two common interconnections are:
 
 ### Cascade / Series
 
-The output of $H_1$ becomes the input of $H_2$:
+The output of $H_{1}$ becomes the input of $H_{2}$:
 
 $$
-y = H_2H_1x = H_2(H_1x).
+y = H_{2}(H_{1}x).
 $$
 
 The rightmost system acts first.
@@ -63,7 +63,7 @@ The rightmost system acts first.
 The same input enters both systems and the outputs are added:
 
 $$
-y = H_1x + H_2x.
+y = H_{1}x + H_{2}x.
 $$
 
 ---
@@ -82,11 +82,11 @@ This is a major theme in the lecture examples.
 
 ## 3. Memory
 
-A system is memoryless if the output at time $t_0$ depends only on the input at
-that same time $t_0$.
+A system is memoryless if the output at time $t_{0}$ depends only on the input at
+that same time $t_{0}$.
 
-In other words, $(Hx)(t_0)$ may depend on $x(t_0)$, but not on $x(t)$ for
-$t\ne t_0$.
+In other words, $(Hx)(t_{0})$ may depend on $x(t_{0})$, but not on $x(t)$ for
+$t\ne t_{0}$.
 
 ### Example Pattern
 
@@ -96,10 +96,10 @@ $$
 y(t)=a x(t).
 $$
 
-At time $t_0$,
+At time $t_{0}$,
 
 $$
-y(t_0)=a x(t_0),
+y(t_{0})=a x(t_{0}),
 $$
 
 so only the current input value is needed.
@@ -110,10 +110,10 @@ $$
 y(t)=\int_{-\infty}^{t}x(\tau)\,d\tau.
 $$
 
-At time $t_0$,
+At time $t_{0}$,
 
 $$
-y(t_0)=\int_{-\infty}^{t_0}x(\tau)\,d\tau,
+y(t_{0})=\int_{-\infty}^{t_{0}}x(\tau)\,d\tau,
 $$
 
 so the output depends on many previous input values.
@@ -127,8 +127,8 @@ times?
 
 ## 4. Causality
 
-A system is causal if the output at time $t_0$ depends only on input values at
-times $t\le t_0$.
+A system is causal if the output at time $t_{0}$ depends only on input values at
+times $t\le t_{0}$.
 
 It cannot depend on future input values.
 
@@ -142,7 +142,7 @@ $$
 y(t)=\int_{-\infty}^{t}x(\tau)\,d\tau.
 $$
 
-At time $t_0$, the integral uses only $\tau\le t_0$.
+At time $t_{0}$, the integral uses only $\tau\le t_{0}$.
 
 Noncausal:
 
@@ -150,11 +150,11 @@ $$
 y(t)=\int_{t-1}^{t+1}x(\tau)\,d\tau.
 $$
 
-At time $t_0$, the integral uses values up to $t_0+1$, which are future values.
+At time $t_{0}$, the integral uses values up to $t_{0}+1$, which are future values.
 
 ### Check
 
-Ask: does the formula require any value of $x(\tau)$ with $\tau>t_0$?
+Ask: does the formula require any value of $x(\tau)$ with $\tau>t_{0}$?
 
 ---
 
@@ -166,7 +166,7 @@ output.
 Equivalently, distinct inputs must always produce distinct outputs:
 
 $$
-x_1\ne x_2 \implies Hx_1\ne Hx_2.
+x_{1}\ne x_{2} \implies Hx_{1}\ne Hx_{2}.
 $$
 
 To prove invertibility, find the inverse system.  
@@ -197,7 +197,7 @@ $$
 For example,
 
 $$
-x_1(t)=0,\qquad x_2(t)=2\pi
+x_{1}(t)=0,\qquad x_{2}(t)=2\pi
 $$
 
 produce the same output:
@@ -276,19 +276,19 @@ To show unstable: find one bounded input that creates an unbounded output.
 A system is time invariant if delaying or advancing the input produces the same
 delay or advance in the output.
 
-Let $S_{t_0}$ be the shift operator:
+Let $S_{t_{0}}$ be the shift operator:
 
 $$
-(S_{t_0}x)(t)=x(t-t_0).
+(S_{t_{0}}x)(t)=x(t-t_{0}).
 $$
 
 Then $H$ is time invariant if
 
 $$
-HS_{t_0}x = S_{t_0}Hx
+H(S_{t_{0}}x) = S_{t_{0}}(Hx)
 $$
 
-for every input $x$ and every shift $t_0$.
+for every input $x$ and every shift $t_{0}$.
 
 ### Testing Procedure
 
@@ -304,14 +304,14 @@ $$
 y(t)=x(t-T).
 $$
 
-Use $T$ for the system's fixed delay and $t_0$ for the test shift.
+Use $T$ for the system's fixed delay and $t_{0}$ for the test shift.
 
 Shift input first:
 
 $$
-x'(t)=x(t-t_0),
+x'(t)=x(t-t_{0}),
 \qquad
-(Hx')(t)=x(t-T-t_0).
+(Hx')(t)=x(t-T-t_{0}).
 $$
 
 System first, then shift output:
@@ -319,7 +319,7 @@ System first, then shift output:
 $$
 y(t)=x(t-T),
 \qquad
-y(t-t_0)=x(t-t_0-T).
+y(t-t_{0})=x(t-t_{0}-T).
 $$
 
 Both are the same, so the system is time invariant.
@@ -333,13 +333,13 @@ $$
 Shift input first:
 
 $$
-(Hx')(t)=t x(t-t_0).
+(Hx')(t)=t x(t-t_{0}).
 $$
 
 System first, then shift output:
 
 $$
-y(t-t_0)=(t-t_0)x(t-t_0).
+y(t-t_{0})=(t-t_{0})x(t-t_{0}).
 $$
 
 These are not equal in general, so the system is time varying.
@@ -351,14 +351,14 @@ These are not equal in general, so the system is time varying.
 A system is linear if it satisfies superposition:
 
 $$
-H(a_1x_1+a_2x_2)=a_1Hx_1+a_2Hx_2
+H(a_{1}x_{1}+a_{2}x_{2})=a_{1}Hx_{1}+a_{2}Hx_{2}
 $$
 
-for all inputs $x_1,x_2$ and all complex constants $a_1,a_2$.
+for all inputs $x_{1},x_{2}$ and all complex constants $a_{1},a_{2}$.
 
 This combines two properties:
 
-- Additivity: $H(x_1+x_2)=Hx_1+Hx_2$.
+- Additivity: $H(x_{1}+x_{2})=Hx_{1}+Hx_{2}$.
 - Homogeneity: $H(ax)=aHx$.
 
 ### Example Pattern
@@ -372,15 +372,15 @@ $$
 Apply the system to a linear combination:
 
 $$
-H(a_1x_1+a_2x_2)(t)
-=t[a_1x_1(t)+a_2x_2(t)]
-=a_1t x_1(t)+a_2t x_2(t).
+H(a_{1}x_{1}+a_{2}x_{2})(t)
+=t[a_{1}x_{1}(t)+a_{2}x_{2}(t)]
+=a_{1}t x_{1}(t)+a_{2}t x_{2}(t).
 $$
 
 This equals
 
 $$
-a_1(Hx_1)(t)+a_2(Hx_2)(t),
+a_{1}(Hx_{1})(t)+a_{2}(Hx_{2})(t),
 $$
 
 so the system is linear.
@@ -595,13 +595,13 @@ $$
 Convolution is associative:
 
 $$
-(x*h_1)*h_2=x*(h_1*h_2).
+(x*h_{1})*h_{2}=x*(h_{1}*h_{2}).
 $$
 
 Convolution is distributive over addition:
 
 $$
-x*(h_1+h_2)=x*h_1+x*h_2.
+x*(h_{1}+h_{2})=x*h_{1}+x*h_{2}.
 $$
 
 These properties are useful for simplifying LTI system interconnections.
@@ -636,9 +636,9 @@ That result begins after slide 108.
 ## Common Checks for This Week
 
 - Are you treating $H$ as an operator on functions?
-- For memory, does the output at $t_0$ need input values at times other than
-  $t_0$?
-- For causality, does the output at $t_0$ use any future input values?
+- For memory, does the output at $t_{0}$ need input values at times other than
+  $t_{0}$?
+- For causality, does the output at $t_{0}$ use any future input values?
 - For invertibility, can two different inputs produce the same output?
 - For BIBO stability, can you either bound the output or find one bounded-input
   counterexample?
