@@ -69,11 +69,11 @@ reasoning, notation, and explanation.
 
 A suggested workflow:
 
-1. Watch the lecture and review the official slides or textbook section first.
+1. Watch the lecture videos and attend the lecture and review the official slides or textbook section first.
 2. Read the corresponding lecture summary to check the main ideas.
 3. Work through the official assignment or practice problems on your own.
 4. Use the tutorial materials to compare approaches, identify missing concepts,
-   and improve your problem-solving route.
+   and find your problem-solving route.
 
 ## Disclaimer
 
