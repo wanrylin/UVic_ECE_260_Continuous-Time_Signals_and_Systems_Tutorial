@@ -494,7 +494,7 @@ input-output behavior has a clean mathematical structure.
 The convolution of two functions $x$ and $h$ is
 
 $$
-(x*h)(t)=\int_{-\infty}^{\infty}x(\tau)h(t-\tau)\,d\tau.
+(x\ast h)(t)=\int_{-\infty}^{\infty}x(\tau)h(t-\tau)\,d\tau.
 $$
 
 Convolution produces a new function. The value at time $t$ is obtained by
@@ -502,9 +502,9 @@ integrating over the dummy variable $\tau$.
 
 Notation warning:
 
-- $x*h$ is the convolution function.
-- $(x*h)(t)$ is the value of that function at time $t$.
-- The star $*$ denotes convolution here, not multiplication.
+- $x\ast h$ is the convolution function.
+- $(x\ast h)(t)$ is the value of that function at time $t$.
+- The symbol $\ast$ denotes convolution here, not multiplication.
 
 ### Interpretation
 
@@ -533,7 +533,7 @@ area changes.
 To compute
 
 $$
-(x*h)(t)=\int_{-\infty}^{\infty}x(\tau)h(t-\tau)\,d\tau,
+(x\ast h)(t)=\int_{-\infty}^{\infty}x(\tau)h(t-\tau)\,d\tau,
 $$
 
 use this workflow:
@@ -589,19 +589,19 @@ This substitution is a common place for sign mistakes.
 Convolution is commutative:
 
 $$
-x*h=h*x.
+x\ast h=h\ast x.
 $$
 
 Convolution is associative:
 
 $$
-(x*h_{1})*h_{2}=x*(h_{1}*h_{2}).
+(x\ast h_{1})\ast h_{2}=x\ast(h_{1}\ast h_{2}).
 $$
 
 Convolution is distributive over addition:
 
 $$
-x*(h_{1}+h_{2})=x*h_{1}+x*h_{2}.
+x\ast(h_{1}+h_{2})=x\ast h_{1}+x\ast h_{2}.
 $$
 
 These properties are useful for simplifying LTI system interconnections.
@@ -613,13 +613,13 @@ These properties are useful for simplifying LTI system interconnections.
 The impulse $\delta$ is the identity element for convolution:
 
 $$
-x*\delta=x.
+x\ast\delta=x.
 $$
 
 To see this,
 
 $$
-(x*\delta)(t)
+(x\ast\delta)(t)
 =\int_{-\infty}^{\infty}x(\tau)\delta(t-\tau)\,d\tau
 =x(t).
 $$
