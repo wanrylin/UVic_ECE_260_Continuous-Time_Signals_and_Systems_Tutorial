@@ -9,9 +9,9 @@ UVic ECE 260 Continuous-Time Signals and Systems Tutorial T01, Summer 2026.
 
 Please fill in the official course links here:
 
-- Course website:
-- Lecture videos:
-- Assignments:
+- Course website: https://www.ece.uvic.ca/~mdadams/courses/ece260
+- Lecture videos: https://www.youtube.com/playlist?list=PLbHYdvrWBMxYGMvQ3QG6paNu7CuIRL5dX
+- Assignments: https://www.ece.uvic.ca/~frodo/courses/ece260/documents/assignments.pdf
 
 ## About This Repository
 
