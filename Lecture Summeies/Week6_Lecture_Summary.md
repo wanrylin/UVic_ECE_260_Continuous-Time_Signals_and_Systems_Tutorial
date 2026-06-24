@@ -1,4 +1,4 @@
-# ECE 260 Week 6-7 Lecture Summary
+# ECE 260 Week 6 Lecture Summary
 
 Continuous-Time Fourier Series  
 Slides 120-155: CTFS definition, coefficient calculation, convergence,
