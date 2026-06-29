@@ -1471,16 +1471,12 @@ For even $k$, the weight is zero.
 
 For odd $k$, the first several nonzero spectral impulses are:
 
-```math
-\begin{array}{c|c|c}
-k & \omega=k\pi/2 & 2\pi a_{k}\\
-\hline
--3 & -3\pi/2 & -j\pi\\
--1 & -\pi/2 & j\pi\\
-1 & \pi/2 & -j\pi\\
-3 & 3\pi/2 & j\pi
-\end{array}
-```
+| $k$ | $\omega=k\pi/2$ | $2\pi a_{k}$ |
+|---:|---:|---:|
+| $-3$ | $-3\pi/2$ | $-j\pi$ |
+| $-1$ | $-\pi/2$ | $j\pi$ |
+| $1$ | $\pi/2$ | $-j\pi$ |
+| $3$ | $3\pi/2$ | $j\pi$ |
 
 The weights continue alternating as $k$ moves through the odd integers.
 
